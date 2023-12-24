@@ -1,4 +1,5 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+import { appConfig } from './app.config';
 
 const config: Config = {
   content: [
@@ -8,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: appConfig.theams.colors,
+      boxShadow: appConfig.theams.boxShadow,
+      backgroundImage: appConfig.theams.gradientColors,
       fontSize: {
         xs: ['1.2rem', { lineHeight: '2.4rem' }],
         sm: ['1.4rem', { lineHeight: '2.8rem' }],
@@ -15,14 +19,14 @@ const config: Config = {
         lg: ['2rem', { lineHeight: '4rem' }],
         xl: ['2.4rem', { lineHeight: '4.8rem' }],
       },
-      colors: {
-        primary: {
-          100: '#334155',
-          200: '#475569',
-        },
-        secondary: {
-          100: '#7dd3fc',
-        },
+      spacing: {
+        space4: '.4rem',
+        space8: '.8rem',
+        space12: '1.2rem',
+        space16: '1.6rem',
+        space20: '2rem',
+        space24: '2.4rem',
+        space32: '3.2rem',
       },
       transitionProperty: {
         height: 'height',
