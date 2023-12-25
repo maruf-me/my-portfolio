@@ -18,6 +18,9 @@ const config: Config = {
         md: ['1.6rem', { lineHeight: '3.2rem' }],
         lg: ['2rem', { lineHeight: '4rem' }],
         xl: ['2.4rem', { lineHeight: '4.8rem' }],
+        '2xl': ['2.8rem', { lineHeight: '5.6rem' }],
+        '3xl': ['3.2rem', { lineHeight: '6.4rem' }],
+        '4xl': ['4rem', { lineHeight: '7.2rem' }],
       },
       spacing: {
         space4: '.4rem',
@@ -27,6 +30,9 @@ const config: Config = {
         space20: '2rem',
         space24: '2.4rem',
         space32: '3.2rem',
+        space40: '4rem',
+        space48: '4.8rem',
+        space56: '5.6rem',
       },
       transitionProperty: {
         height: 'height',
