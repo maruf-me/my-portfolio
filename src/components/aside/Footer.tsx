@@ -1,7 +1,7 @@
 import React from 'react'
+import { socialItems } from '@/data'
 import Button from '../common/Button'
 import SocialItem from './SocialItem'
-import { socialItems } from '@/data/socialItems'
 
 const Footer = () => {
     return (

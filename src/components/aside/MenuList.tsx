@@ -1,6 +1,6 @@
+import { menuList } from '@/data';
 import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
-import { menuList } from '@/data/menuList';
 
 const MenuList = () => {
     const [active, setActive] = useState(menuList[0].link)

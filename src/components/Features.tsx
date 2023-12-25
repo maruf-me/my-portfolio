@@ -1,12 +1,7 @@
 import React from 'react'
 import Card from './common/Card'
+import { featureList } from '@/data'
 import { SectionHeaderTitle, SectionTitle } from './common/SectionTitles'
-
-const featureList = [
-    { id: 1, icon: '', title: 'Web Development', description: 'Translating any designs and wireframes into pixel-perfect high-quality code.' },
-    { id: 2, icon: '', title: 'High-Quality clean Code', description: 'Writing clean, high-quality, high-performance, maintainable code.' },
-    { id: 3, icon: '', title: 'Front-End Developer', description: 'Building reusable components and front-end libraries for future use.' },
-]
 
 const Features = () => {
     return (
@@ -17,9 +12,9 @@ const Features = () => {
                     <SectionHeaderTitle text='What I Do' />
                 </article>
 
-                <div className="grid grid-cols-3 gap-space32">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-space32">
                     {featureList.map((item) =>
-                        <Card key={item.id + `featureCard`} className='px-[4rem] py-[4rem]'>
+                        <Card key={`featureCard` + item.id} className='px-[4rem] py-[4rem]'>
                             this is a first card
                         </Card>
                     )}
