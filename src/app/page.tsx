@@ -7,6 +7,7 @@ const HomePage = () => {
     <main className="bg-primary-100 h-full w-full relative ">
       <Home/>
       <Features/>
+check commit 
 
     </main>
   )
