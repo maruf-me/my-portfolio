@@ -1,5 +1,5 @@
 import { menuList } from '@/data';
-import { Icon } from '@iconify/react';
+import Icon from '../common/Icon';
 import React, { useState } from 'react';
 
 const MenuList = () => {
