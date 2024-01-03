@@ -1,11 +1,11 @@
 import React from 'react'
-import SectionWrapper from './common/SectionWrapper'
-import { SectionHeaderTitle, SectionTitle } from './common/SectionTitles'
 import Card from './common/Card'
 import Icon from './common/Icon'
-import { projectList } from '@/data'
 import Image from './common/Image'
+import { projectList } from '@/data'
 import Button from './common/Button'
+import SectionWrapper from './common/SectionWrapper'
+import { SectionHeaderTitle, SectionTitle } from './common/SectionTitles'
 
 const Portfolio = () => {
   return (
@@ -18,19 +18,23 @@ const Portfolio = () => {
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-space32">
         {projectList.map((item) =>
           <Card key={`featureCard` + item.id}>
-            <div className='h-[40rem] p-space24 text-100'>
+            <div className='h-[46rem] p-space24 text-100'>
 
-              <div className="w-full h-[18rem] rounded-2xl bg-red-400 overflow-hidden relative">
+              <div className="w-full h-[26rem] rounded-2xl bg-red-400 overflow-hidden relative">
                 <div className="absolute top-space4 right-space4 z-20">
                   <Button className='!p-space4 shadow-none'><Icon icon="mdi:view-arrow-right-outline" /></Button>
                 </div>
-                <Image src={item.image} alt={item.title} width={180} height={180} className='object-cover h-full w-full group-hover:scale-110 duration-500' />
+                <Image src={item.image} alt={item.title} width={180} height={260} className='object-cover h-full w-full group-hover:scale-110 duration-500' />
               </div>
 
-              <div className="flex justify-between items-center gap-space12">
+              <div className="flex justify-between items-center gap-space12 py-space12">
                 <SectionTitle text={item.title} className='!text-sm' />
 
-<div className="flex p-space4 px-space8 rounded-lg bg-black">ddd</div>
+                <button className="flex items-center gap-space4 p-space4 px-space8 rounded-lg hover:text-secondary-100 hover:bg-black duration-700 text-100">
+                  <Icon icon='icon-park-outline:love-and-help' />
+
+                  <span className="text-100">112</span>
+                </button>
               </div>
 
               <p className='text-md'>{item.description}</p>

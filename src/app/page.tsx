@@ -2,6 +2,7 @@ import React from 'react';
 import Home from '@/components/Home';
 import Features from '@/components/Features';
 import Portfolio from '@/components/Portfolio';
+import Resume from '@/components/Resume';
 
 const HomePage = () => {
   return (
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Home />
       <Features />
       <Portfolio />
+      <Resume />
     </main>
   )
 }
