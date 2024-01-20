@@ -20,7 +20,7 @@ const Clients = () => {
             <section className="grid grid-cols-12 gap-space24 h-full">
                 <div className="col-span-4">
                     <div className="sticky top-10 w-full">
-                        <Tab tabItems={tabItems} />
+                        <Tab tabItems={tabItems} className='' />
                     </div>
                 </div>
                 <div className="col-span-8">
