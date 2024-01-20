@@ -4,7 +4,7 @@ type IProps = { id: string; children: React.ReactNode }
 
 const SectionWrapper = ({ id, children }: IProps) => {
     return (
-        <section id={id} className='px-space20'>
+        <section id={id} className='px-space20 relative'>
             <div className="min-h-screen border-b border-black py-[6rem] flex flex-col justify-center gap-space32 lg:gap-space40">
                 {children}
             </div>

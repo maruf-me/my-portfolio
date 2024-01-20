@@ -1,8 +1,10 @@
+'use client'
 import React from 'react';
-import Home from '@/components/Home';
-import Features from '@/components/Features';
-import Portfolio from '@/components/Portfolio';
-import Resume from '@/components/Resume';
+import Home from '@/components/features/Home';
+import Resume from '@/components/features/Resume';
+import Clients from '@/components/features/Clients';
+import Features from '@/components/features/Features';
+import Portfolio from '@/components/features/Portfolio';
 
 const HomePage = () => {
   return (
@@ -11,6 +13,7 @@ const HomePage = () => {
       <Features />
       <Portfolio />
       <Resume />
+      <Clients />
     </main>
   )
 }

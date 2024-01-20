@@ -1,9 +1,9 @@
 import React from 'react'
-import Card from './common/Card'
-import Icon from './common/Icon'
 import { featureList } from '@/data'
-import SectionWrapper from './common/SectionWrapper'
-import { SectionHeaderTitle, SectionTitle } from './common/SectionTitles'
+import Card from '@/components/common/Card'
+import Icon from '@/components/common/Icon'
+import SectionWrapper from '@/components/common/SectionWrapper'
+import { SectionHeaderTitle, SectionTitle } from '@/components/common/SectionTitles'
 
 const Features = () => {
     return (
