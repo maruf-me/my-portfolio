@@ -18,7 +18,7 @@ const Home = () => {
 
                 <article className="relative z-20 h-full flex flex-col justify-center items-center gap-space20 px-space20">
                     <h1 className="font-extrabold text-100 text-center uppercase text-[4rem] sm:text-[6rem] lg:text-[8rem] 2xl:text-[12rem]">
-                        MD Maruf Hossain
+                        MD Maruf Hossain Hridoy
                     </h1>
 
                     <article className='text-center text-100 font-bold text-xl sm:text-[3rem] lg:text-[4rem] 2xl:text-[6rem]'>
