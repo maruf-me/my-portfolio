@@ -2,7 +2,7 @@
 import React from 'react';
 import Footer from '../aside/Footer';
 import MenuList from '../aside/MenuList';
-import PersonCurcle from '../aside/PersonCurcle';
+import PersonCircle from '../aside/PersonCircle';
 
 const AsideBar = () => {
 
@@ -11,11 +11,11 @@ const AsideBar = () => {
 
             <div className="h-full flex flex-col justify-between gap-space24 p-space32">
                 <div className="space-y-space32 ">
-                    <PersonCurcle />
+                    <PersonCircle />
                     <MenuList />
                 </div>
 
-                <Footer/>
+                <Footer />
             </div>
         </aside>
     )

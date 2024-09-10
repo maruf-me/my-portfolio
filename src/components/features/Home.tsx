@@ -2,6 +2,7 @@
 import React from 'react'
 import Button from '@/components/common/Button';
 import { TypeAnimation } from 'react-type-animation';
+import { TextEffect } from '../ui/TextEffect';
 
 const typingText = [
     `Web Designer.`, 2000,
@@ -17,9 +18,11 @@ const Home = () => {
                 <span className="absolute bg-primary-100 opacity-50 left-0 top-0 w-full h-full z-10"></span>
 
                 <article className="relative z-20 h-full flex flex-col justify-center items-center gap-space20 px-space20">
-                    <h1 className="font-extrabold text-100 text-center uppercase text-[4rem] sm:text-[6rem] lg:text-[8rem] 2xl:text-[12rem]">
+                    <TextEffect per='char' preset='fade' className="font-extrabold text-100 text-center uppercase text-[4rem] sm:text-[6rem] lg:text-[8rem] 2xl:text-[12rem]">
                         MD Maruf Hossain Hridoy
-                    </h1>
+                    </TextEffect>
+                    {/* <h1 className="font-extrabold text-100 text-center uppercase text-[4rem] sm:text-[6rem] lg:text-[8rem] 2xl:text-[12rem]">
+                    </h1> */}
 
                     <article className='text-center text-100 font-bold text-xl sm:text-[3rem] lg:text-[4rem] 2xl:text-[6rem]'>
                         <span>I am a </span>
