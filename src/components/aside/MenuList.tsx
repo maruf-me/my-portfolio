@@ -1,18 +1,19 @@
 import { menuList } from '@/data';
+import Link from 'next/link';
+import { useState } from 'react';
 import Icon from '../common/Icon';
-import React, { useState } from 'react';
 
 const MenuList = () => {
     const [active, setActive] = useState(menuList[0].link)
 
     return (
-        <ul className='px-space20  pt-space24 space-y-space12'>
+        <ul className='px-space32 space-y-space12 overflow-y-scroll'>
             {menuList.map((item) => (
                 <li key={`menu${item.id}`} onClick={() => setActive(() => item.link)}>
-                    <a href={item.link} className={`aside_menu_item ${active === item.link ? 'text-secondary-100' : 'text-100'}`}>
+                    <Link href={item.link} className={`aside_menu_item ${active === item.link ? 'text-secondary-100' : 'text-100'}`}>
                         <Icon icon={item.icon} />
                         <span>{item.name}</span>
-                    </a>
+                    </Link>
                 </li>
             ))}
         </ul>

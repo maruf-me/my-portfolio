@@ -3,43 +3,42 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-size: 62.5%;
-        font-weight: 400;
-        scroll-behavior: smooth;
-    }
+  html {
+    font-size: 62.5%;
+    font-weight: 400;
+    scroll-behavior: smooth;
+  }
 
-    body {
-        font-size: 1.6rem;
-        line-height: 1.5;
-        font-family: 'Roboto', sans-serif;
-    }
+  body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+  }
 
-    /* width */
-    ::-webkit-scrollbar {
-        width: .4rem;
-    }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0.4rem;
+  }
 
-    /* Track */
-    ::-webkit-scrollbar-track {
-        background: transparent;
-    }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        background: #1b1b1be8;
-        border-radius: .8rem;
-    }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1b1b1be8;
+    border-radius: 0.8rem;
+  }
 
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: #101010e8;
-    }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #101010e8;
+  }
 }
 
-
 @layer components {
-    .aside_menu_item {
-        @apply flex items-center gap-space8 text-lg uppercase hover:text-secondary-100 duration-300;
-    }
+  .aside_menu_item {
+    @apply flex items-center gap-space8 text-md uppercase hover:text-secondary-100 duration-300;
+  }
 }
