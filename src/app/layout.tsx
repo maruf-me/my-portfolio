@@ -1,5 +1,6 @@
 import AsideBar from '@/components/layouts/AsideBar'
 import HeroContainer from '@/components/layouts/HeroContainer'
+import QuickActions from '@/components/layouts/QuickActions'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={inter.className} suppressHydrationWarning={true}>
         <AsideBar />
         <HeroContainer>{children}</HeroContainer>
+        <QuickActions />
       </body>
     </html>
   )

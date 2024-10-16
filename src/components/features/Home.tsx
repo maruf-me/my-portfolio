@@ -1,6 +1,7 @@
 'use client';
 import Button from '@/components/common/Button';
 import { TypeAnimation } from 'react-type-animation';
+import Image from '../common/Image';
 import { TextEffect } from '../ui/TextEffect';
 
 const typingText = [
@@ -13,17 +14,22 @@ const typingText = [
 const Home = () => {
     return (
         <section id='home'>
-            <div className="bg-[url('/images/background_image.jpg')] sm:h-[40vh] md:h-[66vh] xl:h-screen bg-contain md:bg-cover bg-fixed bg-no-repeat relative bg-red-300">
+            <div className="bg-[url('/images/background_image.jpg')] sm:h-[52vh] md:h-[66vh] xl:h-screen bg-contain lg:bg-cover bg-fixed bg-no-repeat relative">
                 <span className="absolute bg-primary-100 opacity-50 left-0 top-0 w-full h-full z-10"></span>
 
-                <article className="relative z-20 h-full flex flex-col justify-center items-center gap-space4 sm:gap-space20 px-space20 py-space24">
-                    <TextEffect per='char' preset='fade' className="font-extrabold text-100 text-center uppercase text-[2.4rem] sm:text-[6rem]">
-                        Welcome
-                    </TextEffect>
-                    {/* <h1 className="font-extrabold text-100 text-center uppercase text-[4rem] sm:text-[6rem] lg:text-[8rem] 2xl:text-[12rem]">
-                    </h1> */}
+                <article className="relative z-20 h-full flex flex-col justify-center items-center gap-space4 lg:gap-space20 px-space20 py-space24">
+                    <article className="flex items-center gap-3">
+                        <TextEffect per='char' preset='fade' className="font-extrabold text-100 text-center text-[2.4rem] lg:text-[6rem]">
+                            {"Hi there!"}
+                        </TextEffect>
 
-                    <article className='text-center text-100 font-bold text-md sm:text-[3rem] lg:text-[4rem]'>
+                        <Image src={`/images/hello.gif`} alt='' width={0} height={0} sizes='100vw' className='w-10 md:w-24' />
+                    </article>
+                    <TextEffect per='char' preset='fade' className="font-extrabold text-100 text-center text-[2.4rem] lg:text-[6rem]">
+                        {"This is MD Maruf Hossain"}
+                    </TextEffect>
+
+                    <article className='text-center text-100 font-bold text-md sm:text-xl lg:text-[4rem]'>
                         <span>I am a </span>
 
                         <TypeAnimation
