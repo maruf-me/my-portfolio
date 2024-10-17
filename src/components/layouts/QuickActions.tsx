@@ -1,6 +1,6 @@
 'use client'
-import { CircleUserRound, Download, Waypoints } from "lucide-react"
-import Button from "../common/Button"
+import { CircleUserRound, Download, FolderOpenDot, Waypoints } from "lucide-react"
+import Button from "../ui/Button"
 
 const QuickActions = () => {
   return (
@@ -23,7 +23,7 @@ const QuickActions = () => {
         </div>
 
         {/* Top button  */}
-        <div title="Resume" className="rotate-0 group-hover:rotate-[360deg] duration-500
+        <div title="Contact" className="rotate-0 group-hover:rotate-[360deg] duration-500
         absolute top-1/2 transform -translate-y-1/2 group-hover:-translate-y-[170%] -left-[calc(150%+40px)] group-hover:left-4 z-20 cursor-pointer"
         >
           <Button className="h-[4rem] w-[4rem] shadow-none !rounded-full overflow-hidden">
@@ -32,11 +32,11 @@ const QuickActions = () => {
         </div>
 
         {/* Bottom button  */}
-        <div title="Resume" className="rotate-0 group-hover:rotate-[360deg] duration-500
+        <div title="Projects" className="rotate-0 group-hover:rotate-[360deg] duration-500
         absolute top-1/2 transform -translate-y-1/2 group-hover:translate-y-[70%] -left-[calc(150%+40px)] group-hover:left-4 z-20 cursor-pointer"
         >
           <Button className="h-[4rem] w-[4rem] shadow-none !rounded-full overflow-hidden">
-            <Download />
+            <FolderOpenDot />
           </Button>
         </div>
       </div>

@@ -1,8 +1,7 @@
-import React from 'react'
-import Card from '@/components/common/Card'
-import Tab, { ITabItem } from '@/components/common/Tab'
-import SectionWrapper from '@/components/common/SectionWrapper'
 import { SectionHeaderTitle, SectionTitle } from '@/components/common/SectionTitles'
+import SectionWrapper from '@/components/common/SectionWrapper'
+import Tab, { ITabItem } from '@/components/common/Tab'
+import Card from '@/components/ui/Card'
 
 const tabItems: ITabItem[] = [
     { id: 'js', title: 'JavaScript' },

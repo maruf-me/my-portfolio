@@ -1,11 +1,10 @@
-import React from 'react'
-import { projectList } from '@/data'
-import Card from '@/components/common/Card'
 import Icon from '@/components/common/Icon'
 import Image from '@/components/common/Image'
-import Button from '@/components/common/Button'
-import SectionWrapper from '@/components/common/SectionWrapper'
 import { SectionHeaderTitle, SectionTitle } from '@/components/common/SectionTitles'
+import SectionWrapper from '@/components/common/SectionWrapper'
+import Button from '@/components/ui/Button'
+import Card from '@/components/ui/Card'
+import { projectList } from '@/data'
 
 const Portfolio = () => {
   return (

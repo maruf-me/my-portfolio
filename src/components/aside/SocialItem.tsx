@@ -1,6 +1,5 @@
-import React from 'react';
 import Icon from '../common/Icon';
-import Card from '../common/Card';
+import Card from '../ui/Card';
 
 type ISocialItem = {
     id: number;

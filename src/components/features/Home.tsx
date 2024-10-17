@@ -1,8 +1,9 @@
 'use client';
-import Button from '@/components/common/Button';
+import { TextEffect } from '@/components/animations/TextEffect';
+import Image from '@/components/common/Image';
+import Button from '@/components/ui/Button';
+import Link from 'next/link';
 import { TypeAnimation } from 'react-type-animation';
-import Image from '../common/Image';
-import { TextEffect } from '../ui/TextEffect';
 
 const typingText = [
     `Web Designer.`, 2000,
@@ -41,7 +42,9 @@ const Home = () => {
                         />
                     </article>
 
-                    <Button className='max-w-max h-[4rem] md:h-auto text-xs  px-space32 sm:px-[5rem] shadow-none sm:mt-space32 uppercase'>Contact Me</Button>
+                    <Link href={'#features'}>
+                        <Button className='max-w-max h-[4rem] md:h-auto text-xs  px-space32 sm:px-[5rem] shadow-none sm:mt-space32'>Learn More</Button>
+                    </Link>
                 </article>
             </div>
         </section>

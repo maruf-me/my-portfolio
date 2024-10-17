@@ -1,10 +1,9 @@
 'use client'
-import React from 'react';
-import Home from '@/components/features/Home';
-import Resume from '@/components/features/Resume';
 import Clients from '@/components/features/Clients';
 import Features from '@/components/features/Features';
+import Home from '@/components/features/Home';
 import Portfolio from '@/components/features/Portfolio';
+import Resume from '@/components/features/Resume';
 
 const HomePage = () => {
   return (
