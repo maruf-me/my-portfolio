@@ -11,7 +11,7 @@ const tabItems: ITabItem[] = [
 const Clients = () => {
     return (
         <SectionWrapper id="clients">
-            <article className="space-y-8 lg:space-y-space24 2xl:space-y-space32">
+            <article className="space-y-8 lg:space-y-space24 2xl:space-y-space32 ">
                 <SectionTitle text="POPULAR CLIENTS" />
                 <SectionHeaderTitle text='Awesome Clients' />
             </article>

@@ -8,10 +8,10 @@ import { projectList } from '@/data'
 
 const Portfolio = () => {
   return (
-    <SectionWrapper id='portfolio'>
+    <SectionWrapper id='portfolio' >
       <article className="space-y-8 lg:space-y-space24 2xl:space-y-space32">
         <SectionTitle text="Visit my portfolio and keep your feedback" />
-        <SectionHeaderTitle text='My Portfolio' />
+        <SectionHeaderTitle text='My Projects' />
       </article>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-space32">

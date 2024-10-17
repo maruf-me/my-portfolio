@@ -42,7 +42,7 @@ const Home = () => {
                         />
                     </article>
 
-                    <Link href={'#features'}>
+                    <Link href={'#skills'}>
                         <Button className='max-w-max h-[4rem] md:h-auto text-xs  px-space32 sm:px-[5rem] shadow-none sm:mt-space32'>Learn More</Button>
                     </Link>
                 </article>

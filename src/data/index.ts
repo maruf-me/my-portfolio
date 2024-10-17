@@ -17,41 +17,68 @@ export const socialItems = [
     icon: "iconoir:github-circle",
     link: "https://github.com/maruf-me",
   },
-  // { id: 2, name: 'Twitter', icon: 'lucide:twitter', link: 'https://twitter.com/' },
 ];
 
 export const menuList = [
   { id: 1, name: "Home", icon: "heroicons:home-solid", link: "#home" },
-  { id: 2, name: "Features", icon: "streamline:baggage", link: "#features" },
-  { id: 6, name: "Portfolio", icon: "uil:layer-group", link: "#portfolio" },
-  { id: 3, name: "Resume", icon: "lucide:users", link: "#resume" },
-  { id: 4, name: "Clients", icon: "tdesign:usergroup", link: "#clients" },
-  { id: 5, name: "Pricing", icon: "akar-icons:price-cut", link: "#pricing" },
-  { id: 7, name: "Blog", icon: "fluent:image-globe-20-regular", link: "#blog" },
-  { id: 8, name: "Contact", icon: "bx:message-rounded-dots", link: "#contact" },
+  {
+    id: 2,
+    name: "Skills",
+    icon: "flowbite:user-settings-outline",
+    link: "#skills",
+  },
+  {
+    id: 6,
+    name: "Technologies",
+    icon: "lucide:cpu",
+    link: "#technologies",
+  },
+  {
+    id: 3,
+    name: "Experience",
+    icon: "hugeicons:new-job",
+    link: "#experience",
+  },
+  { id: 4, name: "Projects", icon: "uil:layer-group", link: "#projects" },
+  { id: 8, name: "Contact", icon: "hugeicons:contact-01", link: "#contact" },
 ];
 
 export const featureList = [
   {
     id: 1,
-    icon: "fluent-mdl2:web-environment",
-    title: "Web Development",
-    description:
-      "Translating any designs and wireframes into pixel-perfect high-quality code.",
+    icon: "icon-park-outline:thinking-problem",
+    title: "Problem Solving",
+    description: "Solving problems with the best solution.",
   },
   {
     id: 2,
     icon: "la:laptop-code",
-    title: "High-Quality Code",
-    description:
-      "Writing clean, high-quality, high-performance, maintainable code.",
+    title: "Clean Code",
+    description: "Writing clean, maintainable, and scalable code.",
+  },
+  {
+    id: 4,
+    icon: "ri:java-fill",
+    title: "OOP Knowledge",
+    description: "Understanding and implementing OOP principles.",
   },
   {
     id: 3,
+    icon: "arcticons:state-farm",
+    title: "Design Patterns",
+    description: "Implementing design patterns in real-world applications.",
+  },
+  {
+    id: 5,
     icon: "iconoir:developer",
-    title: "Front-End Developer",
-    description:
-      "Building reusable components and front-end libraries for future use.",
+    title: "First Learning",
+    description: "Learning new technologies, libraries and frameworks.",
+  },
+  {
+    id: 6,
+    icon: "hugeicons:laptop-performance",
+    title: "Performance Optimization",
+    description: "Optimizing the performance of web applications.",
   },
 ];
 
@@ -79,5 +106,41 @@ export const projectList = [
     image: "/images/background_image.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+  },
+];
+
+export const technologies = [
+  {
+    title: "Programming Languages",
+    items: [
+      "- HTML",
+      "- CSS",
+      "- JavaScript",
+      "- TypeScript",
+      "- Python",
+      "- Java",
+    ],
+  },
+  {
+    title: "FrameWorks & Libraries",
+    items: [
+      "- React",
+      "- Next.js",
+      "- Vue.js",
+      "- Tailwind CSS",
+      "- Bootstrap",
+    ],
+  },
+  {
+    title: "Tools",
+    items: ["- Git", "- GitHub", "- Figma", "- VS Code", "- Postman"],
+  },
+  {
+    title: "Deployment",
+    items: ["- Netlify", "- Vercel", "- Heroku", "- GitHub Pages"],
+  },
+  {
+    title: "Others",
+    items: ["- RESTful API", "- GraphQL", "- Docker"],
   },
 ];

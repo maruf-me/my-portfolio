@@ -1,5 +1,5 @@
 'use client'
-import { CircleUserRound, Download, FolderOpenDot, Waypoints } from "lucide-react"
+import { CircleUserRound, Download, FolderOpenDot, Settings } from "lucide-react"
 import Button from "../ui/Button"
 
 const QuickActions = () => {
@@ -10,7 +10,7 @@ const QuickActions = () => {
       fixed top-1/2 transform -translate-y-1/2 left-0 xl:left-[29rem]  z-30 duration-300"
     >
       <div className="relative group py-space8 px-space4 cursor-pointer">
-        <Waypoints className="anim-rotate" />
+        <Settings className="animate-rotate" />
 
         <div className="absolute hidden group-hover:block left-0 top-1/2 transform -translate-y-1/2 z-20 h-[14rem] w-[9rem] rounded-r-full"></div>
 

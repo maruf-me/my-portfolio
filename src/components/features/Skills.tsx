@@ -5,18 +5,16 @@ import Card from '@/components/ui/Card'
 import { featureList } from '@/data'
 import { InfiniteSlider } from '../animations/InfiniteSlider'
 
-const Features = () => {
+const Skills = () => {
     return (
-        <SectionWrapper id="features">
-            <article className="space-y-8 lg:space-y-space24 2xl:space-y-space32">
-                <SectionTitle text="Features" />
-                <SectionHeaderTitle text='What I Do' />
-            </article>
+        <SectionWrapper id="skills">
+            <SectionTitle text="Skills" className='sticky top-0 z-20 bg-primary-100/90 py-space8' />
+            <SectionHeaderTitle text='What I Do' className='leading-10 sm:leading-relaxed' />
 
-            <InfiniteSlider durationOnHover={800} duration={50} gap={24} className='py-space56'>
+            <InfiniteSlider durationOnHover={800} duration={100} gap={24} className='py-space56'>
                 {featureList.map((item) =>
-                    <Card key={`featureCard` + item.id} className='max-w-[32rem] sm:max-w-[42rem]'>
-                        <div className='h-[28rem] px-[4rem] py-[4rem] text-100 flex flex-col justify-center items-between gap-space16 hover:-translate-y-4 duration-300'>
+                    <Card key={`featureCard` + item.id} className='max-w-[32rem] sm:max-w-[42rem] w-full'>
+                        <div className='h-[24rem] px-space24 py-space16 text-100 flex flex-col justify-center items-between gap-space16 hover:-translate-y-4 duration-300'>
                             <Icon icon={item.icon} className='text-4xl text-secondary-100' />
 
                             <p className="text-xl font-semibold">{item.title}</p>
@@ -29,4 +27,4 @@ const Features = () => {
     )
 }
 
-export default Features
+export default Skills
