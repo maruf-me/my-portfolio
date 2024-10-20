@@ -1,10 +1,11 @@
 'use client'
-import Clients from '@/components/features/Clients';
+import Contact from '@/components/features/Contact';
 import Experience from '@/components/features/Experience';
 import Home from '@/components/features/Home';
-import Portfolio from '@/components/features/Portfolio';
+import Projects from '@/components/features/Projects';
 import Skills from '@/components/features/Skills';
 import Technologies from '@/components/features/Technologies';
+import AwesomeComponents from '@/components/jobs';
 
 const HomePage = () => {
   return (
@@ -13,8 +14,9 @@ const HomePage = () => {
       <Skills />
       <Technologies />
       <Experience />
-      <Portfolio />
-      <Clients />
+      <Projects />
+      <AwesomeComponents />
+      <Contact />
     </main>
   )
 }

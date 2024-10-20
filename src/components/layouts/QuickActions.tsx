@@ -1,8 +1,15 @@
 'use client'
+import { menuList } from "@/data"
+import { useWatcherSection } from "@/hooks/useWatcherSection"
 import { CircleUserRound, Download, FolderOpenDot, Settings } from "lucide-react"
 import Button from "../ui/Button"
 
 const QuickActions = () => {
+  const { activeSectionById } = useWatcherSection({
+    sections: menuList,
+    defaultSection: menuList[0].id,
+  })
+
   return (
     <section
       className="
@@ -26,7 +33,7 @@ const QuickActions = () => {
         <div title="Contact" className="rotate-0 group-hover:rotate-[360deg] duration-500
         absolute top-1/2 transform -translate-y-1/2 group-hover:-translate-y-[170%] -left-[calc(150%+40px)] group-hover:left-4 z-20 cursor-pointer"
         >
-          <Button className="h-[4rem] w-[4rem] shadow-none !rounded-full overflow-hidden">
+          <Button className="h-[4rem] w-[4rem] shadow-none !rounded-full overflow-hidden" onClick={() => activeSectionById('contact')}>
             <CircleUserRound />
           </Button>
         </div>
@@ -35,7 +42,7 @@ const QuickActions = () => {
         <div title="Projects" className="rotate-0 group-hover:rotate-[360deg] duration-500
         absolute top-1/2 transform -translate-y-1/2 group-hover:translate-y-[70%] -left-[calc(150%+40px)] group-hover:left-4 z-20 cursor-pointer"
         >
-          <Button className="h-[4rem] w-[4rem] shadow-none !rounded-full overflow-hidden">
+          <Button className="h-[4rem] w-[4rem] shadow-none !rounded-full overflow-hidden" onClick={() => activeSectionById('components')}>
             <FolderOpenDot />
           </Button>
         </div>

@@ -20,27 +20,25 @@ export const socialItems = [
 ];
 
 export const menuList = [
-  { id: 1, name: "Home", icon: "heroicons:home-solid", link: "#home" },
+  { id: "home", name: "Home", icon: "heroicons:home-solid" },
   {
-    id: 2,
+    id: "skills",
     name: "Skills",
     icon: "flowbite:user-settings-outline",
-    link: "#skills",
   },
   {
-    id: 6,
+    id: "technologies",
     name: "Technologies",
     icon: "lucide:cpu",
-    link: "#technologies",
   },
   {
-    id: 3,
+    id: "experience",
     name: "Experience",
     icon: "hugeicons:new-job",
-    link: "#experience",
   },
-  { id: 4, name: "Projects", icon: "uil:layer-group", link: "#projects" },
-  { id: 8, name: "Contact", icon: "hugeicons:contact-01", link: "#contact" },
+  { id: "projects", name: "Projects", icon: "uil:layer-group" },
+  { id: "components", name: "Components", icon: "mynaui:components" },
+  { id: "contact", name: "Contact", icon: "hugeicons:contact-01" },
 ];
 
 export const featureList = [
@@ -82,32 +80,6 @@ export const featureList = [
   },
 ];
 
-export const projectList = [
-  {
-    id: 1,
-    like: 10,
-    title: "Project 1",
-    image: "/images/background_image.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-  },
-  {
-    id: 2,
-    like: 10,
-    title: "Project 2",
-    image: "/images/person.png",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-  },
-  {
-    id: 3,
-    like: 10,
-    title: "Project 3",
-    image: "/images/background_image.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-  },
-];
 export const skillIcons = [
   "devicon:react",
   "devicon:nextjs",
@@ -186,6 +158,62 @@ export const technologies = [
       { icon: "dashicons:rest-api", title: "RESTful API" },
       { icon: "logos:graphql", title: "GraphQL" },
       { icon: "devicon:docker", title: "Docker" },
+    ],
+  },
+];
+
+export const projectList = [
+  {
+    id: 1,
+    link: "https://www.texbazar.xyz/",
+    title: "Texbazar web application",
+    image: "/images/projects/texbazar.png",
+    description:
+      "This project is a Next.js application built with TypeScript, designed for a modern and dynamic user experience.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Chart.js",
+      "Pusher.js",
+      "Tailwind CSS",
+      "Zustand",
+      "React Hook Form",
+      "SSR",
+      "Framer Motion",
+    ],
+  },
+  {
+    id: 2,
+    link: "https://paikari.hishabee.io/dashboard",
+    title: "Hissabee Paikari web application",
+    image: "/images/projects/paikari.png",
+    description:
+      "This project is a Next.js application utilizing TypeScript with various libraries for front-end functionality.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Chart.js",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "React Hook Form",
+      "RTK Query",
+    ],
+  },
+  {
+    id: 3,
+    link: "#",
+    title: "Portfolio site",
+    image: "/images/background_image.jpg",
+    description:
+      "This is my portfolio site. I built this site with Next.js, TypeScript, and Tailwind CSS.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Chart.js",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "React Hook Form",
+      "RTK Query",
     ],
   },
 ];

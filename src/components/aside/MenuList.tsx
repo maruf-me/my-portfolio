@@ -1,19 +1,23 @@
+import Icon from '@/components/common/Icon';
 import { menuList } from '@/data';
-import Link from 'next/link';
-import { useState } from 'react';
-import Icon from '../common/Icon';
+import { useWatcherSection } from '@/hooks/useWatcherSection';
 
 const MenuList = () => {
-    const [active, setActive] = useState(menuList[0].link)
+    const { activeSection, activeSectionById } = useWatcherSection({
+        sections: menuList,
+        defaultSection: menuList[0].id,
+    })
 
     return (
         <ul className='px-space32 space-y-space12 overflow-y-scroll'>
             {menuList.map((item) => (
-                <li key={`menu${item.id}`} onClick={() => setActive(() => item.link)}>
-                    <Link href={item.link} className={`aside_menu_item ${active === item.link ? 'text-secondary-100' : 'text-100'}`}>
-                        <Icon icon={item.icon} height={20} width={20} />
-                        <span>{item.name}</span>
-                    </Link>
+                <li
+                    key={`${item.id}`}
+                    onClick={() => activeSectionById(item.id)}
+                    className={`aside_menu_item ${activeSection === item.id ? 'text-secondary-100' : 'text-100'}`}
+                >
+                    <Icon icon={item.icon} height={20} width={20} />
+                    <span>{item.name}</span>
                 </li>
             ))}
         </ul>

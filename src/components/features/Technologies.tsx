@@ -32,11 +32,11 @@ const Technologies = () => {
   }
 
   return (
-    <SectionWrapper id='resume'>
+    <SectionWrapper id='technologies'>
       <SectionTitle text="SPECIALIZED IN FRONTEND" className='sticky top-0 z-20 bg-primary-100/90 py-space8' />
       <SectionHeaderTitle text='Technologies' className='leading-10 sm:leading-relaxed' />
 
-      <div className="grid sm:grid-cols-2 gap-space24 md:w-10/12 mx-auto mt-space40 items-start">
+      <div className="grid sm:grid-cols-2 gap-space24 md:w-10/12 mx-auto mt-space40 mb-space24 items-start">
         {technologies.map((item) => {
 
           return (
