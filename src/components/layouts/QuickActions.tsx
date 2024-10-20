@@ -7,9 +7,9 @@ const QuickActions = () => {
     <section
       className="
       w-[40px] bg-white/20 rounded-r-full text-secondary-100
-      fixed top-1/2 transform -translate-y-1/2 left-0 xl:left-[29rem]  z-30 duration-300"
+      fixed top-1/3 md:top-1/2 transform -translate-y-1/2 left-0 xl:left-[29rem]  z-30 duration-300"
     >
-      <div className="relative group py-space8 px-space4 cursor-pointer">
+      <div className="relative group py-space8 px-space4 cursor-pointer rounded-r-full">
         <Settings className="animate-rotate" />
 
         <div className="absolute hidden group-hover:block left-0 top-1/2 transform -translate-y-1/2 z-20 h-[14rem] w-[9rem] rounded-r-full"></div>

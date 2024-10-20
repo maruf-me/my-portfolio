@@ -1,6 +1,4 @@
-import AsideBar from '@/components/layouts/AsideBar'
-import HeroContainer from '@/components/layouts/HeroContainer'
-import QuickActions from '@/components/layouts/QuickActions'
+import RootLayout from '@/components/layouts'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
@@ -13,13 +11,13 @@ export const metadata: Metadata = {
   icons: ["/brand.png"]
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayoutPage({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning={true}>
-        <AsideBar />
-        <HeroContainer>{children}</HeroContainer>
-        <QuickActions />
+        <RootLayout>
+          {children}
+        </RootLayout>
       </body>
     </html>
   )
