@@ -11,22 +11,22 @@ const Technologies = () => {
   const textColor = (tech: string) => {
     switch (tech) {
       case "Programming Languages":
-        return 'text-orange-600 border-orange-600';
+        return 'bg-sky-800/10';
 
       case "FrameWorks & Libraries":
-        return 'text-purple-600 border-purple-600';
+        return 'bg-green-800/10';
 
       case "Tools":
-        return 'text-teal-600 border-teal-600';
+        return 'bg-green-800/10';
 
       case "Deployment":
-        return 'text-green-600 border-green-600';
+        return 'bg-sky-800/10';
 
       case "Others":
-        return 'text-sky-600 border-sky-600';
+        return 'bg-teal-700/10';
 
       default:
-        return 'text-green-600 border-green-600';
+        return 'bg-yellow-700/10';
     }
 
   }
@@ -41,18 +41,19 @@ const Technologies = () => {
 
           return (
             <div key={item.title} className='relative z-10 rounded-xl max-h-max' >
-              <Card className='p-space16' >
-                <div className={`flex flex-col gap-space12 ${textColor(item.title)}`}>
-                  <p className={`text-lg md:text-xl font-semibold leading-8 md:leading-10 flex items-center gap-space4 border-b ${textColor(item.title)}`}> <Flag />{item.title}</p>
-                  <div className='flex gap-space12 sm:gap-space8 flex-wrap sm:flex-col'>
+              <Card className={`${textColor(item.title)} rounded-xl text-slate-400`} >
+                <div className={`flex flex-col gap-space12 p-space24 ${textColor(item.title)}`}>
+                  <p className={`text-md sm:text-lg md:text-xl font-semibold leading-8 md:leading-10 flex items-center gap-space4 border-b border-gray-700 pb-space8`}> <Flag />{item.title}</p>
+
+                  <div className='flex gap-space12 sm:gap-space12 flex-wrap sm:flex-col'>
                     {item.items.map((tech) => (
                       <div key={tech.title} className="flex items-center gap-space8">
                         <Icon
                           icon={tech.icon}
-                          className='text-lg'
+                          className='text-md sm:text-lg'
                         />
 
-                        <p className='text-md leading-normal'>{tech.title}</p>
+                        <p className='text-sm sm:text-md leading-normal'>{tech.title}</p>
                       </div>
                     ))}
                   </div>
