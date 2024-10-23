@@ -42,7 +42,7 @@ const Technologies = () => {
           return (
             <div key={item.title} className='relative z-10 rounded-xl max-h-max' >
               <Card className={`${textColor(item.title)} rounded-xl text-slate-400`} >
-                <div className={`flex flex-col gap-space12 p-space24 ${textColor(item.title)}`}>
+                <div className={`flex flex-col gap-space12 p-space24 rounded-xl ${textColor(item.title)}`}>
                   <p className={`text-md sm:text-lg md:text-xl font-semibold leading-8 md:leading-10 flex items-center gap-space4 border-b border-gray-700 pb-space8`}> <Flag />{item.title}</p>
 
                   <div className='flex gap-space12 sm:gap-space12 flex-wrap sm:flex-col'>

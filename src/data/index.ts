@@ -228,10 +228,11 @@ export const experiences = [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "React Hook Form",
       "Chart.js",
-      "Zustand",
       "Pusher.js",
+      "Zustand",
+      "Zod",
+      "React Hook Form",
       "SSR",
     ],
     responsibilities: [
