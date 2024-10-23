@@ -1,5 +1,5 @@
 'use client'
-import { menuList } from "@/data"
+import { menuList, viewResume } from "@/data"
 import { useWatcherSection } from "@/hooks/useWatcherSection"
 import { CodeXml, Mail, Settings } from "lucide-react"
 import Link from "next/link"
@@ -35,9 +35,9 @@ const QuickActions = () => {
         <div title="Resume" className="rotate-0 group-hover:rotate-[360deg] duration-500
         absolute top-1/2 transform -translate-y-1/2 -left-[calc(150%+40px)] group-hover:left-[calc(100%+8px)] z-20 cursor-pointer"
         >
-          <Link href={`https://drive.google.com/file/d/19YnyapZzLnQvaRXZnpcFwQcTWEe4PytG/view?usp=sharing`} target="_blank" >
+          <Link href={viewResume} target="_blank" >
             <Button className="h-[4rem] w-[4rem] shadow-none !rounded-full overflow-hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-user"><path d="M14 2v4a2 2 0 0 0 2 2h4" /><path d="M15 18a3 3 0 1 0-6 0" /><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" /><circle cx="12" cy="13" r="2" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-file-user"><path d="M14 2v4a2 2 0 0 0 2 2h4" /><path d="M15 18a3 3 0 1 0-6 0" /><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" /><circle cx="12" cy="13" r="2" /></svg>
             </Button>
           </Link>
         </div>

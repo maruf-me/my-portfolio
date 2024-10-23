@@ -1,3 +1,6 @@
+export const viewResume =
+  "https://drive.google.com/file/d/19YnyapZzLnQvaRXZnpcFwQcTWEe4PytG/view?usp=sharing";
+
 export const socialItems = [
   {
     id: 1,
