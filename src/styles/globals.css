@@ -42,3 +42,19 @@
     @apply flex items-center gap-space8 text-md uppercase hover:text-secondary-100 duration-300;
   }
 }
+
+.contact-form-wrapper input,
+textarea {
+  background-color: #191b1e;
+  border-radius: 6px;
+  height: 55px;
+  transition: var(--transition);
+  border: 2px solid #191b1e;
+  padding: 0 15px;
+  font-size: 14px;
+  /* font-family: var(--font-secondary); */
+  color: #798492 !important;
+  box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset,
+    -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+  letter-spacing: 1px;
+}
