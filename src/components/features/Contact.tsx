@@ -5,6 +5,7 @@ import { socialItems } from '@/data'
 import { useState } from 'react'
 import SocialItem from '../aside/SocialItem'
 import Image from '../common/Image'
+import Button from '../ui/Button'
 import Card from '../ui/Card'
 
 const Contact = () => {
@@ -26,15 +27,17 @@ const Contact = () => {
     // Here you would typically send the data to a server
   }
 
+  const inputStyle = `w-full focus:outline-none focus:border-secondary-100/80 placeholder:text-xs placeholder:text-gray-500`
+
 
   return (
     <SectionWrapper id='contact'>
-      <SectionTitle text="Visit my portfolio and keep your feedback" className='sticky top-0 z-20 bg-primary-100/90 py-space8' />
+      <SectionTitle text="Visit my portfolio and keep your feedback" className='sticky top-0 z-30 bg-primary-100/90 py-space8' />
       <SectionHeaderTitle text='Contact with me' className='leading-10 sm:leading-relaxed' />
 
 
       <div className='w-full sm:w-10/12 sm:mx-auto flex flex-col gap-space16 md:flex-row py-space24'>
-        <Card className="md:w-1/3 p-space20" hoverEffect={false}>
+        <Card className="md:w-1/2 lg:w-1/3 p-space20" hoverEffect={false}>
           <div className="mb-6 text-gray-500 group">
             <div className="overflow-hidden max-h-[180px] rounded-xl">
               <Image
@@ -62,60 +65,84 @@ const Contact = () => {
         </Card>
 
 
-        <form onSubmit={handleSubmit} className="md:w-2/3 h-full">
-          <Card hoverEffect={false} className='w-full p-space20 contact-form-wrapper'>
+        <form onSubmit={handleSubmit} className="md:w-1/2 lg:w-2/3 h-full">
+          <Card hoverEffect={false} className='w-full p-space20 pb-space32 contact-form-wrapper'>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="w-full space-y-space4">
+                <label htmlFor="name" className='text-sm text-gray-500 block'>Your Name</label>
+
+                <input
+                  required
+                  id='name'
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className={inputStyle}
+                />
+              </div>
+              <div className="w-full space-y-space4">
+                <label htmlFor="phone" className='text-sm text-gray-500 block'>Phone Number</label>
+
+                <input
+                  type="tel"
+                  id='phone'
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className={inputStyle}
+                />
+              </div>
+            </div>
+
+            <div className="w-full my-space16 space-y-space4">
+              <label htmlFor="email" className='text-sm text-gray-500 block'>Email</label>
+
               <input
-                type="text"
-                name="name"
-                placeholder="YOUR NAME"
-                value={formData.name}
+                id='email'
+                type="email"
+                name="email"
+                value={formData.email}
                 onChange={handleChange}
-                // className="bg-gray-800 rounded p-2 w-full shadow-[1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset]"
+                className={inputStyle + 'w-full'}
                 required
               />
+            </div>
+
+            <div className="w-full my-space16 space-y-space4">
+              <label htmlFor="subject" className='text-sm text-gray-500 block'>Subject</label>
+
               <input
-                type="tel"
-                name="phone"
-                placeholder="PHONE NUMBER"
-                value={formData.phone}
+                type="text"
+                id='subject'
+                name="subject"
+                value={formData.subject}
                 onChange={handleChange}
-                className="bg-gray-800 rounded p-2 w-full"
+                className={inputStyle + 'w-full'}
+                required
               />
             </div>
-            <input
-              type="email"
-              name="email"
-              placeholder="EMAIL"
-              value={formData.email}
-              onChange={handleChange}
-              className="bg-gray-800 rounded p-2 w-full my-space16"
-              required
-            />
-            <input
-              type="text"
-              name="subject"
-              placeholder="SUBJECT"
-              value={formData.subject}
-              onChange={handleChange}
-              className="bg-gray-800 rounded p-2 w-full"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="YOUR MESSAGE"
-              value={formData.message}
-              onChange={handleChange}
-              className=" rounded p-2 w-full h-32 my-space16"
-              required
-            ></textarea>
-            <button
+
+            <div className="w-full my-space16 space-y-space4">
+              <label htmlFor="message" className='text-sm text-gray-500 block'>Your message</label>
+
+              <textarea
+                id='message'
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                className={inputStyle + 'w-full h-[12rem]'}
+                required
+              ></textarea>
+            </div>
+
+            <Button
               type="submit"
-              className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full md:w-auto"
+              className="w-full !text-sm"
             >
               SEND MESSAGE
-            </button>
+            </Button>
           </Card>
         </form>
       </div>

@@ -19,17 +19,20 @@ const tabItems: ITabItem[] = [
 const AwesomeComponents = () => {
   return (
     <SectionWrapper id="components">
-      <SectionTitle text="Build this components" className='sticky top-0 z-20 bg-primary-100/90 py-space8' />
+      <SectionTitle text="Build this components" className='sticky top-0 z-30 bg-primary-100/90 py-space8' />
       <SectionHeaderTitle text='Awesome Components' className='leading-10 sm:leading-relaxed' />
 
+
+
+
       <section className="grid grid-cols-12 gap-space24 h-full py-space24">
-        <div className="col-span-3">
+        <div className="hidden md:block md:col-span-4 lg:col-span-3">
           <div className="sticky top-space56 w-full">
             <Tab tabItems={tabItems} className='' />
           </div>
         </div>
 
-        <div className="col-span-9">
+        <div className="col-span-full md:col-span-8 lg:col-span-9">
           <div className="grid grid-cols-3 gap-space20">
             {Array(20).fill(0).map((item, i) => (
               <Card key={i} className='h-[20rem]'>this is client</Card>
